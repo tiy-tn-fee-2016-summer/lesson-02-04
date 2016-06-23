@@ -4,3 +4,17 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 @import 'box-sizing';
+@import 'foundation';
+
+h2 {
+  @include button;
+
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+
+.btn {
+  @extend h2;
+
+  text-decoration: none;
+}
