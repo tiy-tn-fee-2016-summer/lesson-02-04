@@ -6,15 +6,10 @@
 @import 'box-sizing';
 @import 'foundation';
 
-h2 {
-  @include button;
+@include foundation-everything(true);
 
-  font-family: sans-serif;
-  font-size: 2rem;
-}
-
-.btn {
-  @extend h2;
-
-  text-decoration: none;
+@mixin happy {
+  &::before {
+    content: ':)';
+  }
 }
