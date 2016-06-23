@@ -77,3 +77,19 @@ ul {
   @extend %half-box;
   overflow-y: scroll;
 }
+
+@media screen and (max-width: 50rem) {
+  .page {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-box,
+  .right-box {
+    width: 100%;
+  }
+
+  .right-box {
+    overflow: visible;
+  }
+}
